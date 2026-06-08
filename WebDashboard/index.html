@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Home Security Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="dashboard">
+    <h1>Smart Home Security Dashboard</h1>
+
+    <div id="statusCard" class="status-card">
+      <h2 id="mode">Mode: Loading...</h2>
+      <p id="dateTime">Date/Time: --</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Temperature</h3>
+        <p id="temperature">-- °F</p>
+      </div>
+
+      <div class="card">
+        <h3>Humidity</h3>
+        <p id="humidity">-- %</p>
+      </div>
+
+      <div class="card">
+        <h3>Light Sensor</h3>
+        <p id="lightStatus">--</p>
+      </div>
+
+      <div class="card">
+        <h3>Object Detection</h3>
+        <p id="objectDetected">--</p>
+      </div>
+
+      <div class="card">
+        <h3>Distance</h3>
+        <p id="distance">-- cm</p>
+      </div>
+    </div>
+
+    <h2>Alert Logs</h2>
+    <div id="logs" class="logs">
+      <p>No logs yet.</p>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
